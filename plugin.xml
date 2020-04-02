@@ -17,7 +17,7 @@
   specific language governing permissions and limitations
   under the License.
 -->
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-fcm-with-dependecy-updated" version="4.5.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-fcm-with-dependecy-updated" version="4.5.2">
 	<name>Cordova FCM Push Plugin</name>
 	<description>Google Firebase Cloud Messaging Cordova Push Plugin fork with dependecy updated</description>
 	<license>MIT</license>
@@ -34,7 +34,7 @@
 
 	<!-- ANDROID CONFIGURATION -->
 	<platform name="android">
-		<preference name="FCM_VERSION" default="19.0.0" />
+		<preference name="FCM_VERSION" default="20.1.4" />
 		<preference name="GRADLE_TOOLS_VERSION" default="3.5.3" />
 		<preference name="GOOGLE_SERVICES_VERSION" default="4.3.3" />
 		<preference name="SUPPORT_LIBRARY_VERSION" default="28.0.0" />
@@ -62,7 +62,7 @@
 				<param name="onload" value="true" />
 			</feature>
 		</config-file>
-
+		
 		<framework src="com.google.firebase:firebase-messaging:$FCM_VERSION" />
 
 		<framework src="src/android/FCMPlugin.gradle" custom="true" type="gradleReference"/>
@@ -90,7 +90,7 @@
 			<string>production</string>
 		</config-file>
 
-		<resource-file src="src/ios/Assets/GoogleService-Info.plist" target="Resources/GoogleService-Info.plist" />
+		<resource-file src="src/ios/Assets/GoogleService-Info.plist" target="GoogleService-Info.plist" />
 
 		<header-file src="src/ios/FCMPlugin.h" />
 		<source-file src="src/ios/FCMPlugin.m" />
